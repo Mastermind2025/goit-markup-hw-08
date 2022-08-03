@@ -1,0 +1,208 @@
+/* main page */
+/* main page */
+/* main page */
+%green {
+    border: 1px dashed green;
+}
+                                                // Эффективные решения
+
+.container__effective-solutions {
+    @include manyFlex(flex, wrap, column, center, center);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+.attention{}
+
+ // images radar,  clock, laptop, astronauts
+ .attention__pic {
+     width: 70px;
+     height: 70px;
+ }
+
+ .attention__to {
+     width: 270px;
+     height: 120px;
+     background-color: $light-silver;
+     margin-bottom: 30px;
+
+     @include manyFlex(flex, nowrap, row, center, center);
+     // display: flex;
+     // justify-content: center;
+     // align-items: center;
+ }
+
+.attention__details {
+    @include manyFlex(flex, nowrap, row, space-between, flex-start);
+    // display: flex;
+    // justify-content: space-between;
+}
+
+.attention__topar {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $silver-gray;
+    width: 270px;
+}
+
+.what__do {
+    @include manyFlex(flex, nowrap, row, center, flex-start);
+}
+
+.what__do {}
+
+.what__do li:last-child img[width="370"] {
+    margin-right: 0;
+}
+
+// block Чем мы занимаемся
+
+.what__weitem {
+    .what__sq {
+            position: relative;
+            
+             .what__pic {
+                    margin-right: 30px;
+                    display: block;
+            }
+
+                    .what__desktop {
+                    position: absolute;
+                    bottom: 24px;
+                    left: 5%;
+                    /* transform: translate(-50%); */
+                    z-index: 10;
+                    width: 329px;
+
+                    .what__par {
+                            font-size: 14px;
+                            line-height: 1.14;
+                            letter-spacing: 0.03em;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            text-align: center;
+                    
+                            color: $white;
+                        }
+            }
+                        }
+                .what__sq::after {
+
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        }
+}
+
+                        // section Наша команда
+
+.our__people {
+    @include manyFlex(flex, nowrap, row, center, flex-start);
+
+    // .our__peopleitem:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
+
+    .our__peopleitem {
+            background-color: $white;
+            box-shadow:
+                0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+
+            .our__peoplepic {
+                display: block;
+            }
+
+            .our__peoplebl {
+                padding-top: 27px;
+                padding-bottom: 26px;
+
+                    .our__title {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1.18;
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                
+                        color: $black;
+                    }
+
+                                        .our__par {
+                                            font-size: 16px;
+                                            line-height: 1.18;
+                                            text-align: center;
+                                            letter-spacing: 0.03em;
+                                            margin-top: 10px;
+                    
+                                            color: $silver-gray;
+                                        }
+                    }
+                }
+}
+
+.clients__customers {
+    @include manyFlex(flex, wrap, row, space-between, flex-start);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    
+    
+        .clients__regular__item{
+            
+                    // .clients__regular__item__link {
+                    // width: 170px;
+                    // height: 92px;
+                    // display: flex;
+                    // justify-content: center;
+                    // border-radius: 4px;
+            
+                    // align-items: center;
+            
+                    // // @include border(1px, solid, $silver-icon);
+            
+                    // transition-property: background-color;
+                    // transition-duration: var(--tran-dur);
+                    // transition-timing-function: var(--tran-t-fun);
+                    // }
+
+                    // .clients__regular__item__link:hover {
+                    //     @include border(1px, solid, $color-blue);
+                    // }
+                    // .clients__regular__item__link:focus {
+                    //     @include border(1px, solid, $color-blue);
+                    // }
+
+                                        //    .clients__regular__item__link:hover .clients__icon {
+                                        //        fill: $color-blue;
+                                        //     }
+                                            // .clients__regular__item__link:focus .clients__icon {
+                                            //     fill: $color-blue;
+                                            //     outline: none;
+                                            // }
+
+                    // .clients__icon {
+                    //         fill: var(--silver-icon);
+                    //         width: 106px;
+                    //         height: 60px;
+
+                    //         transition-property: border, fill;
+                    //         transition-duration: var(--tran-dur);
+                    //         transition-timing-function: var(--tran-t-fun);
+                    //         }
+            
+     }
+
+}
+
+
+
+                               

@@ -1,0 +1,19 @@
+// we-doing-box
+// we-doing-box
+// we-doing-box
+
+.we-doing-box{
+    @media screen and( max-width: 1200px) {
+        display: none;
+    }
+    width: 100px;
+       
+}
+
+.container__what {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

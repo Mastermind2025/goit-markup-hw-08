@@ -1,0 +1,109 @@
+
+// attention to details
+// attention to details
+// attention to details
+
+.attention__pic{
+    width: 70px;
+    height: 70px;
+
+   
+    
+    background-color: $light-silver;
+}
+.attention__wrap{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: $light-silver;
+
+}
+
+.attention__list {
+      
+
+        @media screen and( min-width: 1200px) {
+        
+        @include manyFlex(flex, wrap, row, space-between, flex-start);
+            margin: 0 auto;
+            max-width: 1170px;
+            height: 251px;
+        }
+
+        @media screen and(min-width: 768px) and (max-width: 1200px){
+
+            @include manyFlex(flex, wrap, row, center, flex-start);
+            max-width: 768px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+        @include manyFlex(flex, wrap, row, center, flex-start);
+
+            
+        }
+    }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+       .attention__box {
+        flex-basis: calc((100% - 60px) / 2);
+        margin: 0  15px;
+        margin-top: 30px;
+        max-width: 354px;
+        height: 251px;
+    }
+        .attention__box:nth-child(-n + 2) {
+           margin-top: 0px;
+    
+    }}
+
+@media screen and (min-width: 1200px) {
+    .attention__box {
+        flex-basis: calc((100% - 90px) / 4);
+        max-width: 470px;
+                
+    }}
+
+@media screen and (max-width: 768px) {
+    .attention__box {
+        flex-basis: 100%;
+        max-width: 450px;
+        margin: 0 15px;
+           
+    }
+        .attention__box:not(:first-child) {
+                margin-top: 30px;
+            }
+
+    }
+               
+
+h3.attention__title{
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    font-family: $dominant-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+
+    color: $black
+}
+
+
+.attention__par{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: $silver-gray;
+}

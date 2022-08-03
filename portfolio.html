@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts before styles -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Style normalizer first -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="./css/main.min.css" />
+    
+    <title>Портфолио</title>
+</head>
+
+
+<body>
+
+<header class="header">
+    <div class="container header_container-position header-box border">
+        <a href="./index.html" class="main-logo main-logo_pad"><span>Web</span>Studio</a>
+    
+        <!-- button humburger -->
+    
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="header-humburger" width="16" height="12" aria-hidden="true">
+                <use href="./images/icons.svg#humburger"></use>
+            </svg>
+        </button>
+    
+    
+        <!-- small menu -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+    
+            <!-- small menu close button -->
+            <button class="menu-toggle js-close-menu">
+                <svg class="menu__iconclose" aria-hidden="true" width="32" height="32">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="menu-container__list">
+<li class="menu-container__item"><a class="menu-container__link" href="./index.html">Студия</a></li>
+<li class="menu-container__item"><a class="menu-container__link" href="#h">Портфолио</a></li>
+<li class="menu-container__item"><a class="menu-container__link" href="#h">Контакты</a></li>
+            </ul>
+    
+            <ul class="menu-container__contact-list">
+                <li class="menu-container__contact-item"><a class="menu-container__contact-link" href="">+38 096 111 11
+                        11</a></li>
+                <li class="menu-container__contact-item"><a class="menu-container__contact-link"
+                        href="">info@devstudio.com</a></li>
+            </ul>
+    
+            <ul class="menu-container__social-networks">
+<li class="menu-container__instagram"><a class="menu-container__instagram-link" href="#h">Instagram</a></li>
+<li class="menu-container__instagram"><a class="menu-container__instagram-link" href="#h">Twitter</a></li>
+<li class="menu-container__instagram"><a class="menu-container__instagram-link" href="#h">Facebook</a></li>
+<li class="menu-container__instagram"><a class="menu-container__instagram-link" href="#h">LinkedIn</a></li>
+            </ul>
+    
+        </div>
+        <!-- small menu -->
+    
+        <div class="header__wrap">
+    
+    
+            <nav class="header-nav">
+                <ul class="header-nav__wrap">
+                    <li class="header-nav__item"><a class="header-nav__link" href="index.html">Студия</a>
+                    </li>
+                    <li class="header-nav__item"><a class="header-nav__link nav_portfolio" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+    
+        
+            <div class="header__contact-wrap">
+                <ul class="header-contact">
+    
+                    <li class="header-contact__item">
+                        <a class="header-contact__link" href="mailto:info@devstudio.com">
+                            <svg class="header-contact__icon" width="16" height="12" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-let"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+    
+                    <li class="header-contact__item">
+                        <a class="header-contact__link" href="tel:+380961111111">
+                            <svg class="header-contact__icon" width="16" height="12" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-tel"></use>
+                            </svg>
+                            +380 96 111 11 11
+                        </a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    <!-- container in header -->
+</header>
+
+    <!-- header -->
+
+
+
+<main>
+    <section class="section">
+            <div class="container">
+
+            <h2 class="title-hidden">title-hidden</h2>
+                <div class="container_center-buttons">
+            <ul class="portfolio-manybuttons">
+                <li class="portfolio-manybuttons__item"><button type="button">Все</button></li>
+                <li class="portfolio-manybuttons__item"><button type="button">Веб-сайты</button></li>
+                <li class="portfolio-manybuttons__item"><button type="button">Приложения</button></li>
+                <li class="portfolio-manybuttons__item"><button type="button">Дизайн</button></li>
+                <li class="portfolio-manybuttons__item"><button type="button">Маркетинг</button></li>
+            </ul>
+            </div>
+        <ul class="main-block main-block__bigfoto main-block_pad">
+
+        <li class="main-block__bigfotoitems">
+            <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap1.jpg" width="370" alt="Лептоп технокряк">
+                    <div class="main-block__overlay">
+                        <p class="main-block__overlay-text">
+                            Ресурс предлагает комплексные<br>
+                            предложения с разным уровнем<br>
+                            функционала и сервисов. Все это<br>
+                            позволит посетителю получить<br>
+                            исчерпывающие сведения<br>
+                            о компании или частном лице.<br>
+                        </p>
+                    </div>
+            </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Технокряк</h3>
+                <p class="main-block__par">Веб-сайт</p>             
+            </div>
+        </li>
+
+        <li class="main-block__bigfotoitems">
+            <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap2.jpg" width="370" alt="Игра в Баскетбол">
+                    <div class="main-block__overlay">
+                        <p class="main-block__overlay-text">
+                            Ресурс предлагает комплексные<br>
+                            предложения с разным уровнем<br>
+                            функционала и сервисов. Все это<br>
+                            позволит посетителю получить<br>
+                            исчерпывающие сведения<br>
+                            о компании или частном лице.<br>
+                        </p>
+                    </div>
+            </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Постер New Orlean vs Golden Star </h3>
+                <p class="main-block__par">Дизайн</p>
+            </div>
+        </li>
+
+        <li class="main-block__bigfotoitems">
+            <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap3.jpg" width="370" alt="Ресторан морепродуктов">
+                <div class="main-block__overlay">
+                        <p class="main-block__overlay-text">
+                            Ресурс предлагает комплексные<br>
+                            предложения с разным уровнем<br>
+                            функционала и сервисов. Все это<br>
+                            позволит посетителю получить<br>
+                            исчерпывающие сведения<br>
+                            о компании или частном лице.<br>
+                        </p>
+                    </div>
+                </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Ресторан Seafood</h3>
+                <p class="main-block__par">Приложение</p>
+            </div>
+        </li>
+
+        <li class="main-block__bigfotoitems">
+             <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap4.jpg" width="370" alt="Наушники">
+                <div class="main-block__overlay">
+                    <p class="main-block__overlay-text">
+                        Ресурс предлагает комплексные<br>
+                        предложения с разным уровнем<br>
+                        функционала и сервисов. Все это<br>
+                        позволит посетителю получить<br>
+                        исчерпывающие сведения<br>
+                        о компании или частном лице.<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Проект Prime</h3>
+                <p class="main-block__par">Маркетинг</p>
+            </div>
+        </li>
+
+        <li class="main-block__bigfotoitems">
+            <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap5.jpg" width="370" alt="Боксы">
+                <div class="main-block__overlay">
+                    <p class="main-block__overlay-text">
+                        Ресурс предлагает комплексные<br>
+                        предложения с разным уровнем<br>
+                        функционала и сервисов. Все это<br>
+                        позволит посетителю получить<br>
+                        исчерпывающие сведения<br>
+                        о компании или частном лице.<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Проект Boxes</h3>
+                <p class="main-block__par">Приложение</p>
+            </div>
+        </li>
+
+        <li class="main-block__bigfotoitems">
+            <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap6.jpg" width="370" alt="Дисплей">
+                <div class="main-block__overlay">
+                    <p class="main-block__overlay-text">
+                        Ресурс предлагает комплексные<br>
+                        предложения с разным уровнем<br>
+                        функционала и сервисов. Все это<br>
+                        позволит посетителю получить<br>
+                        исчерпывающие сведения<br>
+                        о компании или частном лице.<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Inspiration has no Borders</h3>
+                <p class="main-block__par">Веб-сайт</p>
+            </div>
+        </li>
+
+        <li class="main-block__bigfotoitems">
+            <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap7.jpg" width="370" alt="Разворот журнала">
+                <div class="main-block__overlay">
+                    <p class="main-block__overlay-text">
+                        Ресурс предлагает комплексные<br>
+                        предложения с разным уровнем<br>
+                        функционала и сервисов. Все это<br>
+                        позволит посетителю получить<br>
+                        исчерпывающие сведения<br>
+                        о компании или частном лице.<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Издание Limited Edition</h3>
+                <p class="main-block__par">Дизайн</p>
+            </div>
+        </li>
+
+        <li class="main-block__bigfotoitems">
+            <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap8.jpg" width="370" alt="Гарнитура шрифта">
+                <div class="main-block__overlay">
+                    <p class="main-block__overlay-text">
+                        Ресурс предлагает комплексные<br>
+                        предложения с разным уровнем<br>
+                        функционала и сервисов. Все это<br>
+                        позволит посетителю получить<br>
+                        исчерпывающие сведения<br>
+                        о компании или частном лице.<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Проект LAB</h3>
+                <p class="main-block__par">Маркетинг</p>
+            </div>
+        </li>
+
+        <li class="main-block__bigfotoitems">
+            <div class="main-block__for-overlay">
+            <img class="main-block__img" src="./images/lap9.jpg" width="370" alt="Руки на клавиатуре">
+                <div class="main-block__overlay">
+                    <p class="main-block__overlay-text">
+                        Ресурс предлагает комплексные<br>
+                        предложения с разным уровнем<br>
+                        функционала и сервисов. Все это<br>
+                        позволит посетителю получить<br>
+                        исчерпывающие сведения<br>
+                        о компании или частном лице.<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block__smallsq">
+                <h3 class="main-block__title">Growing Business</h3>
+                <p class="main-block__par">Приложение</p>
+            </div>
+        </li>
+     
+        </ul>
+        </div>
+        <!-- container-->
+        </section>
+    
+</main>
+
+<footer class="footer">
+<div class="container container__foot">
+    <div class="footer__con footer_flex">
+        <div class="footer-webstudio footer_center">
+            <a class="logo main-logo_bottom" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+
+            <address class="footer-webstudio__address">
+                <ul class="footer-webstudio__list footer_center">
+                    <li class="footer-webstudio__item"><a class="footer-webstudio__link" href="#f">г. Киев, пр-т Леси
+                            Украинки,
+                            26</a></li>
+                    <li class="footer-webstudio__item"><a class="footer-webstudio__link"
+                            href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="footer-webstudio__item"><a class="footer-webstudio__link" href="tel:+380991111111">+380
+                            99 111 11
+                            11</a></li>
+                </ul>
+            </address>
+
+        </div>
+
+        <div class="footer__wrap footer_mar">
+            <h4 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h4>
+
+            <ul class="facebook-block">
+                <li>
+                    <a href="#f" class="facebook-block__link">
+                        <svg class="icon" aria-hidden="true" width="32" height="32">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#f" class="facebook-block__link">
+                        <svg class="icon" aria-hidden="true" width="32" height="32">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#f" class="facebook-block__link">
+                        <svg class="icon" aria-hidden="true" width="32" height="32">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#f" class="facebook-block__link">
+                        <svg class="icon" aria-hidden="true" width="32" height="32">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="footer__wrap">
+        <h4 class="footer__title">Подпишитесь на рассылку</h4>
+
+        <form class="footer__form" name="small-form" autocomplete="off">
+            <div class="footer__mail-form footer_center">
+                <label class="footer-label" for="user-mail-web"></label>
+                <input class="footer-input" id="user-mail-web" type="email" name="user-mail" placeholder="E-mail">
+
+                <button class="button footer__button" type="submit">Подписаться
+
+                    <svg class="footer__icon-send" aria-hidden="true" width="32" height="32">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+<!-- container container__foot-->
+<!-- container__wrapper in footer-->
+
+    <!-- container in footer-->
+</footer>
+
+<!-- script for small menu -->
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+</script>
+
+<script defer src="./js/mobile-menu.js"></script>
+  
+</body>
+</html>
