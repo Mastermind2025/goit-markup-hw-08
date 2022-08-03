@@ -23,6 +23,10 @@
 
 }
 
+section.section_color{
+    background-color: $light-silver;
+}
+
 .container__foot{
     @media screen and(min-width: 1200px) {
     display: flex;

@@ -5,7 +5,7 @@
 
 header.header {
    // background-color: rgb(0, 55, 255);
-   border-bottom: 1px $silver-gray;
+   border-bottom: 1px solid #ECECEC;
 }
 
 .header-box{
@@ -145,6 +145,11 @@ header.header {
     color: #2196f3;
     fill: #2196f3;
  }
+
+ li.header-nav__item a.header-nav__link:focus{
+   color: #2196f3;
+   outline: none;
+ }
  
 
  .header-contact__item .header-contact__link:focus svg {
@@ -152,6 +157,8 @@ header.header {
     fill: $color-blue;
     outline: none;
  }
+
+ 
 
 // Studio Portfolio Contacts
 
