@@ -6,7 +6,7 @@
 .main-logo{
     
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     padding: 25px 0;
     padding-left: 15px;
@@ -23,17 +23,20 @@
         line-height: 1.19;
         padding: 24px 0;
         padding-left: 15px;
-       
-        
-        
+        top: 0px;
     }
+
+    @media screen and (max-width: 769px) {
+        top: -7px;
+    }
+
     @media screen and (min-width: 1200px) {
 
-        font-size: 26px;
-        padding: 24px 0;
-        padding-left: 15px;
-}
-}
+    font-size: 26px;
+    padding: 24px 0;
+    padding-left: 15px;
+}}
+
 .logo span,
 .main-logo span{
     color: $color-blue;

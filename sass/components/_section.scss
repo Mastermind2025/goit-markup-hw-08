@@ -13,12 +13,10 @@
     // @include manyFlex(flex, wrap, row, center, flex-start);
         
     margin: 0 auto;
-    // padding-left: 15px;
-    // padding-right: 15px;
-    // background-color: rgb(169, 64, 64);
+    width: 100%;
    
-    @media screen and (min-width: 481px){
-        // height: 80px;
+    @media screen and (max-width: 480px){
+    width: 320px;
     }
 
 }
@@ -88,19 +86,4 @@ section.section_color{
     padding-bottom: 94px;
 }}
 
-// .solutions__back {
-//     max-width: 1600px;
-//     padding: 198px 0;
-//     margin-left: auto;
-//     margin-right: auto;
 
-//     background-image:
-//         linear-gradient(to bottom,
-//             rgba(58, 50, 47, 0.4),
-//             rgba(47, 48, 58, 0.4)),
-//         url("../images/img.jpg");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-// }

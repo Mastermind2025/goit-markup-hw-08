@@ -117,7 +117,7 @@
 
     <main>
         <section class="section section_solution">
-            <div class="container container-solution__back">
+            <div class="container-solution__back container-solution_pad">
                 <h1 class="main-title">Эффективные решения<br> для вашего бизнеса</h1>
     <button class="button" type="button" data-modal-open>Заказать услугу</button> <!-- button -->
             </div>
@@ -259,15 +259,18 @@
                 <h2 class="primery-title primery-title_pad">Наша команда</h2>
                     <ul class="our__people">
                         <li class="our__peopleitem">
-                            
-                            <img class="our__peoplepic"
 
-                            srcset="
-                            ./images/resp/01img1x.jpg 1x,
-                            ./images/resp/01img2x.jpg 2x
-                            "
-                            src="./images/resp/01img1x.jpg" width="270"
-                            alt="Продуктовый дизайнер Игорь Демьяненко">
+<picture>
+<source srcset="./images/resp/r270@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+<source srcset="./images/resp/r354.jpg 1x, ./images/resp/r354@2x.jpg 2x" 
+    media="(min-width: 768px)" type="image/jpg">
+<source srcset="./images/resp/r450.jpg 1x, ./images/resp/r450@2x.jpg 2x"
+    media="(min-width: 450px)" type="image/jpg">
+
+<img class="our__peoplepic"
+src="./images/resp/r450.jpg" 
+alt="Продуктовый дизайнер Игорь Демьяненко">
+</picture>
 
                             <div class="our__peoplebl">
                                 <h3 class="our__title">Игорь Демьяненко</h3>
@@ -312,15 +315,18 @@
                         </li>
                         <li class="our__peopleitem">
 
-                            <img class="our__peoplepic"
+<picture>
+<source srcset="./images/resp/o270@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+<source srcset="./images/resp/o354.jpg 1x, ./images/resp/o354@2x.jpg 2x" media="(min-width: 768px)"
+    type="image/jpg">
+<source srcset="./images/resp/o450.jpg 1x, ./images/resp/o450@2x.jpg 2x" media="(min-width: 450px)"
+    type="image/jpg">
 
-                             srcset="
-                            ./images/resp/02img1x.jpg 1x,
-                            ./images/resp/02img2x.jpg 2x
-                            "
-                            src="./images/resp/02img1x.jpg" width="270"
-                            alt="Разработчик Ольга Репина">
-
+<img class="our__peoplepic"
+src="./images/resp/o450.jpg"
+alt="Разработчик Ольга Репина">
+</picture>
+                           
                             <div class="our__peoplebl">
                                 <h3 class="our__title">Ольга Репина</h3>
                                 <p class="our__par">Frontend Developer</p>
@@ -364,15 +370,18 @@
                         </li>
                         <li class="our__peopleitem">
 
-                            <img class="our__peoplepic"
+<picture>
+<source srcset="./images/resp/n270@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+<source srcset="./images/resp/n354.jpg 1x, ./images/resp/n354@2x.jpg 2x" media="(min-width: 768px)"
+ type="image/jpg">
+<source srcset="./images/resp/n450.jpg 1x, ./images/resp/n450@2x.jpg 2x" media="(min-width: 450px)"
+ type="image/jpg">
 
-                             srcset="
-                            ./images/resp/03img1x.jpg 1x,
-                            ./images/resp/03img2x.jpg 2x
-                            "
-                            src="./images/resp/03img1x.jpg" width="270"
-                            alt="Маркетолог Николай Тарасов">
-
+<img class="our__peoplepic" 
+src="./images/resp/n450.jpg" 
+alt="Маркетолог Николай Тарасов">
+</picture>
+                           
                             <div class="our__peoplebl">
                                 <h3 class="our__title">Николай Тарасов</h3>
                                 <p class="our__par">Marketing</p>
@@ -415,16 +424,19 @@
                         </li>
                         <li class="our__peopleitem">
 
-                            <img class="our__peoplepic" 
+<picture>
+    <source srcset="./images/resp/m270@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+    <source srcset="./images/resp/m354.jpg 1x, ./images/resp/m354@2x.jpg 2x" media="(min-width: 768px)"
+        type="image/jpg">
+    <source srcset="./images/resp/m450.jpg 1x, ./images/resp/m450@2x.jpg 2x" media="(min-width: 450px)"
+        type="image/jpg">
 
-                              srcset="
-                            ./images/resp/04img1x.jpg 1x,
-                            ./images/resp/04img2x.jpg 2x
-                            "
-                            src="./images/resp/04img1x.jpg" width="270"
-                            alt="UI дизайнер Михаил Ермаков">
+    <img class="our__peoplepic"
+     src="./images/resp/m450.jpg"
+     alt="UI дизайнер Михаил Ермаков">
+</picture>
 
-                            <div class="our__peoplebl">
+                          <div class="our__peoplebl">
                                 <h3 class="our__title">Михаил Ермаков</h3>
                                 <p class="our__par">UI Designer</p>
                                 <ul class="facebook-block">

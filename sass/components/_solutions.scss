@@ -2,58 +2,80 @@
 // main solution
 // main solution
 // main solution
-
-.container-solution__back{
+.container-solution_pad{
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        @media screen and(max-width: 480px ){
-        padding-top: 118px;
-        padding-bottom: 118px;       
-        
-        margin-left: auto;
-        margin-right: auto;
-        background-image: linear-gradient(to bottom, rgba(58, 50, 47, 0.4), rgba(47, 48, 58, 0.4)),
-         url("../images/bac1x480.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        
-}
-        @media screen and (min-width: 481px)  and(max-width: 768px) {
+        @media screen and(max-width: 480px) {
+                        padding-top: 118px;
+                        padding-bottom: 118px;
+        }
+
+        @media screen and (min-width: 481px) and(max-width: 768px) {
                 padding-top: 118px;
                 padding-bottom: 118px;
-                
-
-                margin-left: auto;
-                margin-right: auto;
-                background-image: linear-gradient(to bottom, rgba(58, 50, 47, 0.4), rgba(47, 48, 58, 0.4)),
-                        url("../images/bac1x768.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
         }
+
         @media screen and(min-width: 768px) {
                 padding-top: 200px;
                 padding-bottom: 200px;
                 max-width: 1600px;
+        }
 
+}
+.container-solution__back{
+        
 
-                margin-left: auto;
-                margin-right: auto;
-                background-image: linear-gradient(to bottom, rgba(58, 50, 47, 0.4), rgba(47, 48, 58, 0.4)),
-                        url("../images/bac1x768.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin-left: auto;
+        margin-right: auto;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media screen and (max-width: 479px) {
+
+                        background-image: $gradient,
+                                url("../images/resp/h480.jpg");
+        
+                        @media (min-device-pixel-ratio: 2),
+                        (-webkit-min-device-pixel-ratio: 2),
+                        (min-resolution: 2dppx),
+                        (min-resolution: 192dpi) {
+                                background-image: $gradient,
+                                url("../images/resp/h480@2x.jpg");
+                        }}
+
+                @media screen and (min-width: 480px) {
+                        background-image: $gradient,
+                                url("../images/resp/h768.jpg");
+
+                        @media (min-device-pixel-ratio: 2),
+                        (-webkit-min-device-pixel-ratio: 2),
+                        (min-resolution: 2dppx),
+                        (min-resolution: 192dpi) {
+                                background-image: $gradient,
+                                url("../images/resp/h768@2x.jpg");
+                        }
+
+                }
+
+                @media screen and (min-width: 768px) {
+                        background-image: $gradient,
+                                url("../images/resp/h1600.jpg");
+
+                        @media (min-device-pixel-ratio: 2),
+                        (-webkit-min-device-pixel-ratio: 2),
+                        (min-resolution: 2dppx),
+                        (min-resolution: 192dpi) {
+                                background-image: $gradient,
+                                        url("../images/resp/h1600@2x.jpg");
+                        }}
 
         }
-}
+       
+
 
 .menu-container a{
         color: $color-blue;

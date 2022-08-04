@@ -51,12 +51,17 @@
     @media screen and(min-width: 768px) and (max-width: 1200px) {
         flex-basis: calc((100% - 60px) / 2);
         max-width: 354px;
+        @include manyFlex(flex, wrap, row, center, center);
+    }
+
+    @media screen and (max-width: 768px) {
+        @include manyFlex(flex, wrap, row, center, center);
     }
 }
 @media screen and(min-width: 767px) and (max-width: 1200px){
 
 .our__peopleitem:not(:nth-child(-n + 2)){
     margin-top: 30px;
-    border: 2px dashed red;
+   
 }}
 
