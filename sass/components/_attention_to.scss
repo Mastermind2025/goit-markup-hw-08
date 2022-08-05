@@ -93,7 +93,11 @@ h3.attention__title{
     text-align: left;
     text-transform: uppercase;
 
-    color: $black
+    color: $black;
+
+    @media screen and ( max-width: 768px) {
+    text-align: center;
+    }
 }
 
 

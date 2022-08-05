@@ -3,9 +3,12 @@
 /* portfolio */
 
 
-
 .main-block__bigfoto {
-   @include manyFlex(flex, wrap, row, flex-start, flex-start);
+
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+
    margin: 0 auto;
    width: 1170px;
 
@@ -13,24 +16,23 @@
         width: 768px;
        
     }
-         @media screen and (max-width: 768px) {
-            @include manyFlex(flex, wrap, row, center, flex-start);
-            width: 480px;
-          
-         }
+    @media screen and (max-width: 768px) {
+    @include manyFlex(flex, wrap, row, center, flex-start);
+        width: 480px;
+    
+    }
 
-        @media screen and (max-width: 480px) {
-            @include manyFlex(flex, wrap, row, center, flex-start);
-            width: 320px;
+    @media screen and (max-width: 480px) {
+        @include manyFlex(flex, wrap, row, center, flex-start);
+        width: 320px;
 
-        }
+    }
 }
  @media screen and (max-width: 768px) {
 
     .container_center-buttons {
-            margin: 0 auto;
-            width: 480px;
-           
+        margin: 0 auto;
+        width: 480px;
         }
  }
  
@@ -45,7 +47,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 .main-block__bigfotoitems:nth-child(odd){
-    margin-left: 15px;
+        margin-left: 15px;
 }
 }
 
@@ -57,6 +59,7 @@
 }
 
 .main-block__bigfotoitems {
+
     position: relative;
     border: 1px solid $border;
     width: 370px;
@@ -64,14 +67,11 @@
     margin-bottom: 30px;
     list-style: none;
         
-    transition-property: box-shadow;
-    transition-duration: var(--tran-dur);
-    transition-timing-function: var(--tran-t-fun);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and ( min-width: 768px) and ( max-width: 1200px ) {
         width: 354px;
-        height: 440px;
-        
+               
     }
     @media screen and (max-width: 768px){
         width: 450px;
@@ -96,7 +96,7 @@
 }
 
 .main-block_pad{
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }
 
 .main-block__bigfotoitems:nth-child(3n) {
@@ -121,6 +121,12 @@
  @media screen and (min-width: 768px) and (max-width: 1200px) {
     .main-block__bigfotoitems:nth-child(2n) {
             margin-right: 0px;
+        }
+ }
+
+ .main-block__bigfotoitems:last-child {
+     @media screen and (max-width: 1200px) {
+         margin-bottom: 0;
         }
  }
  
@@ -151,30 +157,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 40px;
-    margin-top: 94px;
+    margin-bottom: 50px;
+    margin-top: 0;
 
     @media screen and (min-width: 768px) and (max-width: 1200px) {
             
-        margin-top: 60px;
-        margin-bottom: 30px;
-        }
+    margin-top: 0;
+    margin-bottom: 30px;
+    }
+
     @media screen and (max-width: 768px) {
 
-        margin-left: 15px;
-        margin-top: 60px;
-        margin-bottom: 40px ;
-        max-width: 390px;
-        height: 91px;
-        justify-content: flex-start;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 40px ;
+    max-width: 390px;
+    height: 91px;
+    justify-content: flex-start;
        
     }
 
     @media screen and (max-width: 480px) {
-        margin-left: 4px;
-        margin-top: 10px;
+    margin-left: 4px;
+    margin-top: 10px;
        
-     }
+    }
 }
 
 .portfolio-manybuttons__item {
@@ -239,9 +246,14 @@
     color: $black;
     background-color: $light-silver;
 
-    transition-property: background-color, color, box-shadow;
-    transition-duration: var(--tran-dur);
-    transition-timing-function: var(--tran-t-fun);
+    transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    // transition-property: background-color, color, box-shadow;
+    // transition-duration: var(--tran-dur);
+    // transition-timing-function: var(--tran-t-fun);
 }
 
 .portfolio-manybuttons__item button:focus,
@@ -261,6 +273,7 @@
 .main-block__smallsq {
     padding-top: 21px;
     padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 19px;
 }
 
@@ -284,11 +297,9 @@
     background-color: $color-blue;
     transform: translateY(101%);
     /* hover */
-    transition-property: transform;
-     transition-duration: var(--tran-dur);
-     transition-timing-function: var(--tran-t-fun);
-
-    
+   
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .main-block__for-overlay:hover .main-block__overlay {

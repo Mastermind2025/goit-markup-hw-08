@@ -11,7 +11,7 @@
   height: 100%;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -210,24 +210,22 @@
   transition-timing-function: var(--tran-t-fun);
 }
 @media screen and ( max-width: 1200px) {
-  .modal__title {
-     
-      margin-top: 40px;
-      
-    }
+        .modal__title {
+        margin-top: 40px;
+        }
 
         .modal__fieldlabel{
   
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: .01em;
-  color: $silver-gray;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: .01em;
+        color: $silver-gray;
         }
 
-                .modal__formsq {
-                  position: relative;
-                  margin-top: 10px;
-                }
+        .modal__formsq {
+          position: relative;
+          margin-top: 10px;
+        }
 
 .modal {
   
@@ -235,6 +233,10 @@
   left: 50%;
   width: 450px;
   min-height: 609px;
+
+  @media screen and ( max-width: 480px) {
+  width: 100vw;
+  }
 
   }
 .modal__labellink {

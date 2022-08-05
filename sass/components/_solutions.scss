@@ -3,13 +3,17 @@
 // main solution
 // main solution
 .container-solution_pad{
+
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        @media screen and(max-width: 480px) {
-                        padding-top: 118px;
-                        padding-bottom: 118px;
+}
+
+.section-solution_pad{
+@media screen and(max-width: 480px) {
+                padding-top: 118px;
+                padding-bottom: 118px;
         }
 
         @media screen and (min-width: 481px) and(max-width: 768px) {
@@ -18,15 +22,21 @@
         }
 
         @media screen and(min-width: 768px) {
+                padding-top: 118px;
+                padding-bottom: 118px;
+                max-width: 1600px;
+        }
+
+        @media screen and(min-width: 1200px) {
                 padding-top: 200px;
                 padding-bottom: 200px;
                 max-width: 1600px;
         }
 
 }
-.container-solution__back{
-        
 
+.section-solution__back{
+        
         margin-left: auto;
         margin-right: auto;
 
@@ -75,7 +85,6 @@
 
         }
        
-
 
 .menu-container a{
         color: $color-blue;
