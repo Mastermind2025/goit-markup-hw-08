@@ -148,10 +148,15 @@ background-color: $dark-blue;
     border-radius: 50px;
     margin-right: 10px;
 }
+
+.facebook-block li:last-child .facebook-block__link {
+   margin-right: 0;
+}
+
 @media screen and(min-width: 1200px) {
 
     .footer_flex {
-    width: 566px;
+    width: 490px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -202,6 +207,9 @@ background-color: $dark-blue;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer__con{
     }
 
     .footer__mail-form .footer__icon-send {

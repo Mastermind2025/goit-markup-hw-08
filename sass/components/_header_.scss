@@ -85,9 +85,11 @@ header.header {
     align-items: center;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   //  transition-property: color;
-   //  transition-duration: var(--tran-dur);
-   //  transition-timing-function: var(--tran-t-fun);
+    
+   @media screen and(max-width: 1199px) {
+   font-size: 12px;
+   line-height: 1.16;
+   }
 
     @media screen and( min-width: 768px ) and ( max-width: 1200px ) {
       padding: 0;

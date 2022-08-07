@@ -25,12 +25,12 @@
 }
 
 .our__people {
-    @include manyFlex(flex, wrap, row, space-around, flex-start);
-    // display: flex;
-    // flex-wrap: nowrap;
-    // flex-direction: row;
-    // justify-content: center;
-    // align-items: flex-start;
+    // @include manyFlex(flex, wrap, row, space-around, flex-start);
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: flex-start;
 }
 
 .our__people .our__peopleitem {
@@ -45,24 +45,30 @@
 
     @media screen and(max-width: 768px) {
 
-        @include manyFlex(flex, wrap, row, center, center);
-        flex-basis: 100%;
-        max-width: 450px;
-        margin-top: 30px;
-        height: 622px;
-        }
-
-        @media screen and(max-width: 480px) {
-            height: 470px
-        }
-
-        @media screen and(min-width: 768px) and (max-width: 1200px) {
-        flex-basis: calc((100% - 60px) / 2);
-        max-width: 354px;
-        @include manyFlex(flex, wrap, row, center, center);
+    @include manyFlex(flex, wrap, row, center, center);
+    flex-basis: 100%;
+    max-width: 450px;
+    margin-top: 30px;
+    height: 622px;
     }
 
+    @media screen and(max-width: 480px) {
+    height: 470px
+    }
+
+    @media screen and(min-width: 768px) and (max-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 2);
+    max-width: 354px;
+    @include manyFlex(flex, wrap, row, center, center);
+    }
 }
+@media screen and(min-width: 1200px) {
+.our__peopleitem{
+    margin-right: 30px;
+}
+.our__peopleitem:last-child {
+    margin-right: 0;
+}}
 
 @media screen and(min-width: 767px) and (max-width: 1200px){
 
